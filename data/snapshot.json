@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-07-20T00:00:00Z",
+  "source": {
+    "repository": "jeanc0071/projet",
+    "branch": "agent/refresh-stability",
+    "mode": "copie publique filtrée en lecture seule"
+  },
+  "status": {
+    "status": "to_validate",
+    "taskId": "refresh-stability",
+    "objective": "Stabiliser l’actualisation quasi temps réel sans clignotement, retour à Supervision ni perte d’état local.",
+    "agent": "Codex — Project Control",
+    "currentAction": "Intervalle de collecte par défaut corrigé à 20 secondes et validé sans régression de stabilité ni de sécurité.",
+    "nextAction": "Publier le commit ciblé sur la PR #5 et demander une revue indépendante du nouveau head.",
+    "lastProgressAt": "2026-07-19T20:49:36Z",
+    "updatedAt": "2026-07-19T20:49:36Z",
+    "milestone": "Conformité de l’intervalle 20 secondes validée"
+  },
+  "tasks": [
+    {"id":"v1-audit","title":"Auditer le bilan hebdomadaire existant","status":"completed","weight":1,"owner":"Codex","progress":1},
+    {"id":"v1-architecture","title":"Concevoir l’architecture commune de collecte","status":"completed","weight":2,"owner":"Codex","progress":1},
+    {"id":"v1-format","title":"Définir le format .project-control","status":"completed","weight":1,"owner":"Codex","progress":1},
+    {"id":"v1-dashboard","title":"Créer le tableau de bord local","status":"to_validate","weight":3,"owner":"Codex","progress":1,"currentAction":"Chenillards d’activité, détail pondéré et estimation temporelle vérifiés.","nextAction":"Validation visuelle et fonctionnelle par l’utilisateur et ChatGPT de supervision."},
+    {"id":"v1-pilot","title":"Instrumenter le projet pilote Pilotage-Projets-Codex","status":"completed","weight":1,"owner":"Codex","progress":1},
+    {"id":"v1-tests","title":"Tester le fonctionnement de la V1","status":"completed","weight":2,"owner":"Codex","progress":1},
+    {"id":"ecosystem-map","title":"Ajouter la cartographie de l’écosystème Orcherstra","status":"to_validate","weight":3,"owner":"Codex — Project Control","progress":0.98,"currentAction":"Cartographie, Organisation, Paramètres, Chronologie dense, filtre multi-projets, parcours des demandes et Guide pédagogique implémentés en lecture seule.","nextAction":"Confirmer visuellement les interactions après correction puis demander la validation du superviseur."},
+    {"id":"intake-changelog","title":"Ajouter Notes, idées et bugs et le Changelog","status":"to_validate","weight":4,"owner":"Codex — Project Control","progress":0.98,"currentAction":"MVP implémenté et validé automatiquement.","nextAction":"Publier la PR brouillon empilée puis obtenir la confirmation visuelle et la revue humaine."},
+    {"id":"idea-linking","title":"Catégoriser et relier les notes, idées et bugs","status":"to_validate","weight":4,"owner":"Codex — Project Control","progress":1,"currentAction":"Moteur, persistance, API, interface et rendu sûr des preuves validés ; QA grand et petit écran réussie.","nextAction":"Publier la PR brouillon empilée puis obtenir la revue humaine sans fusion automatique."},
+    {"id":"refresh-stability","title":"Stabiliser l’actualisation du tableau de bord","status":"to_validate","weight":2,"owner":"Codex — Project Control","progress":1,"currentAction":"Intervalle par défaut corrigé à 20 secondes ; compatibilité, empreinte métier et conservation d’état restent validées.","nextAction":"Publier le commit ciblé puis obtenir une revue indépendante de la PR #5 sans fusion automatique."}
+  ],
+  "validationsCount": 79
+}
