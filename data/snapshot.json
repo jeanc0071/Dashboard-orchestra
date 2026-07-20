@@ -1,11 +1,9 @@
 {
-  "generatedAt": "2026-07-20T00:00:00Z",
+  "generatedAt": "2026-07-19T20:49:36Z",
   "source": {
     "repository": "jeanc0071/projet",
     "branch": "agent/refresh-stability",
-    "mode": "copie publique filtrée en lecture seule",
-    "candidate": true,
-    "candidateLabel": "Cartographie historique candidate — à confirmer visuellement"
+    "mode": "copie publique filtrée en lecture seule"
   },
   "status": {
     "status": "to_validate",
@@ -30,26 +28,5 @@
     {"id":"idea-linking","title":"Catégoriser et relier les notes, idées et bugs","status":"to_validate","weight":4,"owner":"Codex — Project Control","progress":1,"currentAction":"Moteur, persistance, API, interface et rendu sûr des preuves validés ; QA grand et petit écran réussie.","nextAction":"Publier la PR brouillon empilée puis obtenir la revue humaine sans fusion automatique."},
     {"id":"refresh-stability","title":"Stabiliser l’actualisation du tableau de bord","status":"to_validate","weight":2,"owner":"Codex — Project Control","progress":1,"currentAction":"Intervalle par défaut corrigé à 20 secondes ; compatibilité, empreinte métier et conservation d’état restent validées.","nextAction":"Publier le commit ciblé puis obtenir une revue indépendante de la PR #5 sans fusion automatique."}
   ],
-  "validationsCount": 79,
-  "ecosystem": {
-    "schemaVersion": "1.0",
-    "rootEntityId": "ecosystem:orcherstra",
-    "controlProjectId": "project:pilotage-projets-codex",
-    "entities": [
-      {"id":"ecosystem:orcherstra","type":"ecosystem","name":"Écosystème Orcherstra","description":"Périmètre de supervision déclaré par DEC-UI-001.","status":"active","permission":"read_only"},
-      {"id":"project:pilotage-projets-codex","type":"application","name":"Project Control","description":"Tableau de bord local de télémétrie et de suivi des projets Codex.","status":"active","permission":"branch_write","parentId":"ecosystem:orcherstra"},
-      {"id":"project:orcherstra","type":"application","name":"Orcherstra","description":"Application observée déclarée ; sa télémétrie détaillée n’était pas encore disponible dans Project Control.","status":"planned","permission":"read_only","parentId":"ecosystem:orcherstra"},
-      {"id":"agent:supervisor-orcherstra-relay","type":"agent","name":"SUPERVISEUR — Orcherstra Relay","description":"Superviseur principal et autorité de cadrage du travail technique Project Control.","status":"active","permission":"human_confirmation","parentId":"ecosystem:orcherstra"},
-      {"id":"agent:codex-project-control","type":"agent","name":"Codex — Project Control","description":"Agent technique exécutant, sans rôle de supervision ni délégation.","status":"active","permission":"branch_write","parentId":"project:pilotage-projets-codex"},
-      {"id":"agent:user-jeanc0071","type":"agent","name":"Utilisateur principal — jeanc0071","description":"Propriétaire du projet et autorité humaine connue pour les validations sensibles et les fusions.","status":"active","permission":"human_confirmation","parentId":"ecosystem:orcherstra"},
-      {"id":"external-system:orcherstra-request-intake","type":"external_system","name":"Guichet unique — issues Orcherstra","description":"Point d’entrée opérationnel actuel pour une demande humaine structurée.","status":"active","permission":"read_only","parentId":"project:orcherstra"},
-      {"id":"application:project-control-requests","type":"application","name":"Module Demandes","description":"Cible future : formulaire guidé et fil de questions dans Project Control.","status":"planned","permission":"inactive","parentId":"project:pilotage-projets-codex"},
-      {"id":"automation:snapshot-collector","type":"automation","name":"Collecte périodique locale","description":"Collecte en lecture seule et actualisation de l’instantané Project Control.","status":"active","permission":"read_only","parentId":"project:pilotage-projets-codex"},
-      {"id":"automation:snapshot-stream","type":"automation","name":"Flux local d’actualisation","description":"Notification SSE du navigateur sans rechargement de la page.","status":"active","permission":"read_only","parentId":"project:pilotage-projets-codex"},
-      {"id":"application:project-control-intake","type":"application","name":"Notes, idées et bugs","description":"Registre SQLite interne Project Control.","status":"active","permission":"branch_write","parentId":"project:pilotage-projets-codex"},
-      {"id":"application:project-control-changelog","type":"application","name":"Changelog","description":"Synthèse en lecture seule construite uniquement depuis des changements prouvés.","status":"active","permission":"read_only","parentId":"project:pilotage-projets-codex"},
-      {"id":"application:continuous-improvement-advisor","type":"application","name":"Conseiller d’amélioration continue","description":"Sous-produit futur indépendant de recommandations.","status":"planned","permission":"inactive","parentId":"ecosystem:orcherstra"},
-      {"id":"application:learning-center","type":"application","name":"Centre d’apprentissage","description":"Sous-projet futur indépendant de tutoriels versionnés.","status":"planned","permission":"inactive","parentId":"ecosystem:orcherstra"}
-    ]
-  }
+  "validationsCount": 79
 }
