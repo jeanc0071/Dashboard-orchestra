@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10131a">
+  <title>Orkestra — Supervision mobile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">ORKestra</p>
+      <h1>Supervision mobile</h1>
+    </div>
+    <button id="refresh" class="icon-button" type="button" aria-label="Actualiser">↻</button>
+  </header>
+
+  <main>
+    <section id="connection" class="banner loading">Chargement du dernier snapshot GitHub…</section>
+
+    <section class="hero-card">
+      <div class="hero-head">
+        <div>
+          <span id="statusBadge" class="badge">—</span>
+          <h2 id="objective">Chargement…</h2>
+        </div>
+        <div class="progress-ring" aria-label="Progression globale">
+          <span id="globalProgress">—</span>
+        </div>
+      </div>
+      <dl class="summary-grid">
+        <div><dt>Action actuelle</dt><dd id="currentAction">—</dd></div>
+        <div><dt>Prochaine action</dt><dd id="nextAction">—</dd></div>
+        <div><dt>Jalon</dt><dd id="milestone">—</dd></div>
+        <div><dt>Dernière donnée</dt><dd id="updatedAt">—</dd></div>
+      </dl>
+    </section>
+
+    <section class="metrics" aria-label="Indicateurs">
+      <article><strong id="taskCount">—</strong><span>Tâches</span></article>
+      <article><strong id="completedCount">—</strong><span>Terminées</span></article>
+      <article><strong id="validationCount">—</strong><span>À valider</span></article>
+      <article><strong id="blockedCount">—</strong><span>Bloquées</span></article>
+    </section>
+
+    <section class="section-head">
+      <div><p class="eyebrow">Pilotage</p><h2>Travail en cours</h2></div>
+      <select id="statusFilter" aria-label="Filtrer les tâches">
+        <option value="active">Actives</option>
+        <option value="all">Toutes</option>
+        <option value="to_validate">À valider</option>
+        <option value="completed">Terminées</option>
+      </select>
+    </section>
+    <section id="tasks" class="task-list" aria-live="polite"></section>
+
+    <details class="source-panel">
+      <summary>Sources et limites</summary>
+      <p>Vue publique en lecture seule. Les informations proviennent des fichiers versionnés du dépôt <code>projet</code>, branche <code>agent/refresh-stability</code>. Elles ne reflètent pas les changements locaux non poussés.</p>
+      <p><a href="https://github.com/jeanc0071/projet/tree/agent/refresh-stability/.project-control">Ouvrir les snapshots sources</a></p>
+    </details>
+  </main>
+
+  <footer>Dashboard statique GitHub Pages · aucune écriture distante</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
